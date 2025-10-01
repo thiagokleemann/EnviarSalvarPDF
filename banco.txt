@@ -1,0 +1,10 @@
+Tabela Banco:
+
+CREATE TABLE arquivos_pdf (
+    id SERIAL PRIMARY KEY,
+    nome_original VARCHAR(255) NOT NULL,
+    nome_salvo VARCHAR(255) NOT NULL UNIQUE,
+    caminho_servidor VARCHAR(512) NOT NULL,
+    tamanho_bytes INTEGER,
+    data_upload TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);

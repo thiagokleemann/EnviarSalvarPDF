@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload e Download de PDF</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #status-mensagem { 
+            margin-top: 15px; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            min-height: 20px; 
+            background-color: #f0f0f0;
+        }
+        #lista-arquivos p {
+            border-bottom: 1px dotted #ccc;
+            padding: 5px 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Enviar e Baixar Arquivo PDF</h1>
+
+    <form id="uploadForm">
+        <label for="pdfFile">Selecione o arquivo PDF:</label>
+        <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf" required>
+        <br><br>
+        <button type="submit">Enviar PDF</button>
+    </form>
+
+    <div id="status-mensagem">Aguardando envio...</div>
+
+    <hr>
+    <h2>Arquivos Salvos</h2>
+    <div id="lista-arquivos">
+        Carregando lista de arquivos...
+    </div>
+
+    <script src="scripthtml.js"></script>
+
+</body>
+</html>
